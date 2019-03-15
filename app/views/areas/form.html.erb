@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <h1 class="text-center">エリア登録</h1>
+    <%= form_with model: @area, local: true do |f| %>
+      <div class="form-group">
+        <%= f.label "Zipcode" %>
+        <%= f.text_field :zipcode, value: @area.zipcode, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Prefcode" %>
+        <%= f.text_field :prefcode, value: @area.prefcode, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Address1" %>
+        <%= f.text_field :address1, value: @area.address1, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Kana1" %>
+        <%= f.text_field :kana1, value: @area.kana1, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Address2" %>
+        <%= f.text_field :address2, value: @area.address2, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Kana2" %>
+        <%= f.text_field :kana2, value: @area.kana2, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Address3" %>
+        <%= f.text_field :address3, value: @area.address3, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Kana3" %>
+        <%= f.text_field :kana3, value: @area.kana3, class: "form-control", readonly: true %>
+      </div>
+      <div class="form-group">
+        <%= f.label "Introduction" %>
+        <%= f.text_area :introduction, class: "form-control" %>
+      </div>
+      <%= f.submit "登録する", class: "btn btn-primary btn-block mb-3" %>
+    <% end %>
+  </div>
+</div>
