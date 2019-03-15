@@ -71,7 +71,7 @@ class AreasController < ApplicationController
   def create
     @area = Area.new(area_params)
     if @area.save
-      redirect_to areas_path, notice: "地域を登録しました｡"
+      redirect_to root_path, notice: "地域を登録しました｡"
     else
       flash.now[:alert] = "Validation failed: #{@area.errors.full_messages.join}"
       render :form

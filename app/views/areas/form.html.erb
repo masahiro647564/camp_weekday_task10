@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-6 offset-md-3">
-    <h1 class="text-center mt-5">エリア登録</h1>
+    <h1 class="text-center">エリア登録</h1>
     <%= form_with model: @area, local: true do |f| %>
       <div class="Zipcpde">
         <%= f.label "郵便番号" %>
@@ -38,7 +38,7 @@
         <%= f.label "Introduction" %>
         <%= f.text_area :introduction, class: "form-control" %>
       </div>
-      <%= f.submit "登録する", class: "btn btn-primary btn-block" %>
+      <%= f.submit "登録する", class: "btn btn-primary btn-block mb-3" %>
     <% end %>
   </div>
 </div>
